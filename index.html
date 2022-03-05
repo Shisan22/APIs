@@ -7,6 +7,12 @@
         <link rel="icon" href="img/Logo....png">
 
         <img src="img/Incio/incio.png" width="650" height="300"/>
+
+        <style>
+            #img{
+                display: none;
+            }
+        </style>
     </head>
     <body>   
         <p class="intro">
@@ -61,6 +67,28 @@
 
         <p class="autores">
             Sebastian Chavez <a class="No" href="https://www.youtube.com/watch?v=kAMmg73WVIA">-</a> Juan Pablo Gonzalez
+        </p>
+
+        <button id="recomendacion" onclick="mostrar();"> recomendacion del momento </button>
+
+        <div id="img">
+             
+             <p align="center"> </align> <img src="https://api.lorem.space/image/game?w=150&h=220"width="300px" height="300px" alt=""></p>
+            
+             <button id="recomendacion" onclick="ocultar();"> cerrar </button>
+            </div>
+        
+        <script>
+            function mostrar(){
+                document.getElementById('img').style.display = 'block';
+            }
+    
+            function ocultar(){
+                document.getElementById('img').style.display = 'none';
+            }
+        </script>
+        <p class="recargar">
+            para ver otras recomendaciones del momento refresque la paquina
         </p>
     </body>
 </html>
