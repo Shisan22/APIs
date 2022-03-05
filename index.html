@@ -7,12 +7,6 @@
         <link rel="icon" href="img/Logo....png">
 
         <img src="img/Incio/incio.png" width="650" height="300"/>
-
-        <style>
-            #img{
-                display: none;
-            }
-        </style>
     </head>
     <body>   
         <p class="intro">
@@ -22,6 +16,24 @@
         </p>
          
         <img src="img/Incio/nes-controller-black-wallpaper-1920-x-1200.jpeg" width="1014" height="650">
+       <div> <button id="recomendacion" onclick="mostrar();"> recomendacion del momento </button> </div>
+
+        <div id="img">
+             
+             <p align="center"> </align> <img src="https://api.lorem.space/image/game?w=150&h=220"width="300px" height="300px" alt=""></p>
+            
+             <button id="recomendacion" onclick="ocultar();"> cerrar </button>
+            </div>
+        
+        <script>
+            function mostrar(){
+                document.getElementById('img').style.display = 'block';
+            }
+    
+            function ocultar(){
+                document.getElementById('img').style.display = 'none';
+            }
+        </script>
 
         <div class="Bloodborne">
             <figure>
@@ -69,26 +81,66 @@
             Sebastian Chavez <a class="No" href="https://www.youtube.com/watch?v=kAMmg73WVIA">-</a> Juan Pablo Gonzalez
         </p>
 
-        <button id="recomendacion" onclick="mostrar();"> recomendacion del momento </button>
+        <P> si quieres recomendaciones personalizadas con tu edad seleciona la opcion que mas encaje con tu edad </P>
+    <button class="cuarentass" onclick="seve();"> 40 años </button>
 
-        <div id="img">
-             
-             <p align="center"> </align> <img src="https://api.lorem.space/image/game?w=150&h=220"width="300px" height="300px" alt=""></p>
-            
-             <button id="recomendacion" onclick="ocultar();"> cerrar </button>
-            </div>
+    <div id="cuarenta">
+         
+         <p > si cumples con esta edad te recomendamos juegos tranquios para evitar emosiones fuerte y peligros para la salud algunos juegos como Dark Souls o PT son perfectos para ti </p>
         
-        <script>
-            function mostrar(){
-                document.getElementById('img').style.display = 'block';
-            }
+         <button id="cuarenatas" onclick="noseve();"> cerrar </button>
+        </div>
     
-            function ocultar(){
-                document.getElementById('img').style.display = 'none';
-            }
-        </script>
-        <p class="recargar">
-            para ver otras recomendaciones del momento refresque la paquina
-        </p>
+    <script>
+        function seve(){
+            document.getElementById('cuarenta').style.display = 'block';
+        }
+
+        function noseve(){
+            document.getElementById('cuarenta').style.display = 'none';
+        }
+    </script>
+
+    <button class="20s" onclick="show();"> 20 años </button>
+
+    <div id="veinte">
+         
+         <p> si cumples con esta edad te recomendamos todo tipo de generos pero damos mas efasis en juegos mas maduros con emociones fuertes y desafiantes </p>
+        
+         <button id="20" onclick="shownt();"> cerrar </button>
+        </div>
+    
+    <script>
+        function show(){
+            document.getElementById('veinte').style.display = 'block';
+        }
+
+        function shownt(){
+            document.getElementById('veinte').style.display = 'none';
+        }
+    </script>
+    
+    <button class="10s" onclick="muestralo();"> 10 años </button>
+
+    <div id="dies">
+         
+         <p> si buscas juegos para tu hijo de estas edades puedes buscar en el catalogo infantil de las tiendas virtuales como pepa pig o ben 10 </p>
+        
+         <button id="10" onclick="nomuestres();"> cerrar </button>
+        </div>
+    
+    <script>
+        function muestralo(){
+            document.getElementById('dies').style.display = 'block';
+        }
+
+        function nomuestres(){
+            document.getElementById('dies').style.display = 'none';
+        }
+    </script>
+
+<p class="recargar">
+    para ver otras recomendaciones del momento puedes volver a cargar la paquina y encontraras contenido nuevo
+</p>
     </body>
 </html>
