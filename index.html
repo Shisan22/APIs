@@ -158,6 +158,25 @@
         }
     </script>
 
+<div> <button id="recomendacionP" onclick="mostrarp();"> si no te interesan los juegos esto te podria interesar </button> </div>
+
+<div id="recomendaciones">
+     
+   <p align="center"> </align> <img src="https://api.lorem.space/image/movie?w=150&h=220"width="300px" height="300px" alt=""></p>
+
+     <button id="recomendacionP" onclick="ocultarp();"> cerrar </button>
+    </div>
+
+<script>
+    function mostrarp(){
+        document.getElementById('recomendaciones').style.display = 'block';
+    }
+
+    function ocultarp(){
+        document.getElementById('recomendaciones').style.display = 'none';
+    }
+</script>
+
 <p class="recargar">
     para ver otras recomendaciones del momento puedes volver a cargar la paquina y encontraras contenido nuevo
 </p>
