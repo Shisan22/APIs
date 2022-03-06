@@ -180,3 +180,15 @@ a{
 .Pokemon figure:hover > a img {
     transform: scale(1.3);
 }
+#img{
+    display: none;
+}
+#cuarenta{
+    display: none
+}
+#veinte{
+    display: none
+}
+#dies{
+    display: none
+}
