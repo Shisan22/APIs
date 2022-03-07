@@ -28,6 +28,11 @@ a{
     padding: 2%;
     margin-right: 13%;
     margin-left: 13%;
+
+.imagenintro {
+    border-radius: 10%;
+}
+
 }
 .No {
     display:inline-block;
