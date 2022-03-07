@@ -85,6 +85,25 @@
         <p class="autores">
             Sebastian Chavez <a class="No" href="https://www.youtube.com/watch?v=kAMmg73WVIA">-</a> Juan Pablo Gonzalez
         </p>
+        <br><div> <button id="recomendacionjP" onclick="mostrarjp();"> mira esta persona quiere jugar contigo HollowKnight </button> </div>
+
+    <div id="recomendacionesjp">
+
+        <p align="center">
+            </align> <img src="https://api.lorem.space/image/face?w=150&h=150" width="300px" height="300px" alt=""></p>
+
+        <button id="recomendacionjP" onclick="ocultarjp();"> cerrar </button>
+    </div>
+
+    <script>
+        function mostrarjp() {
+            document.getElementById('recomendacionesjp').style.display = 'block';
+        }
+
+        function ocultarjp() {
+            document.getElementById('recomendacionesjp').style.display = 'none';
+        }
+    </script>
     </body>
 
 </html>
