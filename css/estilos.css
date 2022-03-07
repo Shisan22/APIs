@@ -21,6 +21,13 @@ a{
 }
 .intro {
     border: 5px solid #000;
+    border: 5px solid #000;
+    border-radius: 25px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    padding: 2%;
+    margin-right: 13%;
+    margin-left: 13%;
 }
 .No {
     display:inline-block;
