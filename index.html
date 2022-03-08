@@ -86,13 +86,11 @@
         </figure>
     </div>
 
-    <div class="autores">
-        <ul>
-            <li>Sebastian Quiceno <a class="No" href="https://www.youtube.com/watch?v=kAMmg73WVIA"> Biografia</a></li> 
-            <li>Juan Pablo Gonzalez</li>
-            <li>Nestor Gutierrez</li>
-        </ul>
-    </div>
+    <ul class="autores">
+        <li>Esteban Quiceno <a class="No" href="https://www.youtube.com/watch?v=kAMmg73WVIA">-</a></li> 
+        <li>Juan Pablo Gonzalez</li>
+        <li>Nestor Gutierrez</li>
+    </ul>
 
     <P> si quieres recomendaciones personalizadas con tu edad seleciona la opcion que mas encaje con tu edad </P>
     <button class="cuarentass" onclick="seve();"> 40 años </button>
@@ -194,11 +192,43 @@
         function ocultarp() {
             document.getElementById('recomendaciones').style.display = 'none';
         }
-    </script>
+    </script><br>
+
+<br><div> <button id="recomendacionjP" onclick="mostrarjp();"> mira esta persona quiere jugar contigo </button> </div>
+
+    <div id="recomendacionesjp">
+
+        <p align="center">
+            </align> <img src="https://api.lorem.space/image/face?w=150&h=150" width="300px" height="300px" alt=""></p>
+
+        <button id="recomendacionjP" onclick="ocultarjp();"> cerrar </button>
+    </div>
+
+    <script>
+        function mostrarjp() {
+            document.getElementById('recomendacionesjp').style.display = 'block';
+        }
+
+        function ocultarjp() {
+            document.getElementById('recomendacionesjp').style.display = 'none';
+        }
+    </script><br>
 
     <p class="recargar">
         para ver otras recomendaciones del momento puedes volver a cargar la paquina y encontraras contenido nuevo
     </p>
+     
+    </div>
+
+    <script>
+        function mostrarp() {
+            document.getElementById('recomendaciones').style.display = 'block';
+        }
+
+        function ocultarp() {
+            document.getElementById('recomendaciones').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
