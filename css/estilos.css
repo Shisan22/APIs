@@ -36,8 +36,10 @@ a{
     display:inline-block;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color:aqua;
 }
+
+
 .menu {
     text-decoration:none;
     width: 100%;
@@ -65,7 +67,7 @@ a{
 .autores {
     background:#000;
     padding: 10px 20px;
-    margin: 50px;
+    margin: 10%;
 }
 
 
