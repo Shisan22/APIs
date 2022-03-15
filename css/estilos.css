@@ -38,7 +38,10 @@ a{
     padding: 0;
     color:aqua;
 }
-
+ul, li{
+    margin: 0;
+    list-style: none;
+}
 
 .menu {
     text-decoration:none;
