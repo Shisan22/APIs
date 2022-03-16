@@ -1,22 +1,22 @@
-.container{
+#contenedor1{
     margin: auto;
     width: 800px;
     padding: 30px;
   }
   
-  ul, li {
+  #contenedor1 > ul, li {
       padding: 0;
       margin: 0;
       list-style: none;
   }
   
-  ul.slider{
+  #contenedor1 > ul.slider{
     position: relative;
     width: 800px;
     height: 300px;
   }
   
-  ul.slider li {
+  #contenedor1 > ul.slider li {
       position: absolute;
       left: 0px;
       top: 0px;
@@ -26,31 +26,31 @@
       transition: opacity .5s;
   }
   
-  ul.slider li img{
+  #contenedor1 > ul.slider li img{
     width: 100%;
     height: 300px;
     object-fit: cover;
   }
   
-  ul.slider li:first-child {
+  #contenedor1 > ul.slider li:first-child {
       opacity: 1; /*Mostramos el primer <li>*/
   }
   
-  ul.slider li:target {
+  #contenedor1 > ul.slider li:target {
       opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
   }
   
-  .menu{
+  #contenedor1 > .menu{
     text-align: center;
     margin: 20px;
   }
   
-  .menu li{
+  #contenedor1 > .menu li{
     display: inline-block;
     text-align: center;
   }
   
-  .menu li a{
+  #contenedor1 > .menu li a{
     display: inline-block;
     color: white;
     text-decoration: none;
