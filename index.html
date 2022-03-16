@@ -1,49 +1,4 @@
 <html>
-    <img src="img/Incio/incio.png" width="650" height="300" />
-    <p class="intro">
-        Gaming Rod es una pagina en la que se redactan de reseñas casuales a varios titulos reconocidos y uno que otro
-        arte escondido en el apartado gamer.
-        En la que detallaremos aspectos diferentes, con el objetivo de conocer mas afondo nuestros videojuegos
-        favoritos, descubrir y analizar con nosotros sobre las proximas entregas de estos titulos.
-    </p>
-    <div id="contenedor1">
-        <ul class="slider">
-          <li id="slide1">
-            <img src="img/Incio/Bloodborne.jpg"/>
-          </li>
-          <li id="slide2">
-            <img src="img/Incio/Hades.jpg"/>
-          </li>
-          <li id="slide3">
-            <img src="img/Incio/Metroid.jpg"/>
-          </li>
-          <li id="slide4">
-            <img src="img/Incio/Hollow_Knight.jpg"/>
-          </li>
-          <li id="slide5">
-            <img src="img/Pokemon/logazo.jpg"/>
-          </li>
-        </ul><br>
-        
-        <br><ul class="menu">
-          <li>
-            <a href="#slide1">1</a>
-          </li>
-          <li>
-            <a href="#slide2">2</a>
-          </li>
-          <li>
-            <a href="#slide3">3</a>
-          </li>
-          <li>
-            <a href="#slide4">4</a>
-          </li>
-          <li>
-            <a href="#slide5">5</a>
-          </li>
-        </ul>
-        
-      </div>
 <head>
     <title>Gaming Rod</title>
 
@@ -57,8 +12,66 @@
 </head>
 
 <body>
-<br>
-    <br><div> <button id="recomendacion" onclick="mostrar();"> recomendacion del momento </button> </div>
+    <img src="img/Incio/incio.png" width="650" height="300" />
+
+	<div>
+		<ul class="menu">           
+            <li><a href="Bloodborne.html" >Bloodborne</a></li>
+            <li><a href="Hades.html" >Hades</a></li>
+            <li><a href="Metroid.html">Metroid Dread</a></li>
+            <li><a href="HollowKnight.html">HollowKnight</a></li>
+			<li><a href="Pokemon.html">Pokemon Arceus</a></li>
+        </ul>
+	</div>
+    <p class="intro">
+        Gaming Rod es una pagina en la que se redactan de reseñas casuales a varios titulos reconocidos y uno que otro
+        arte escondido en el apartado gamer.
+        En la que detallaremos aspectos diferentes, con el objetivo de conocer mas afondo nuestros videojuegos
+        favoritos, descubrir y analizar con nosotros sobre las proximas entregas de estos titulos.
+    </p>
+	<div id="contenedor1">
+		<ul class="slider">
+			<li id="slide1">
+				<img src="img/Incio/Bloodborne.jpg"/>
+			</li>
+			<li id="slide2">
+				<img src="img/Incio/Hades.jpg"/>
+			</li>
+			<li id="slide3">
+				<img src="img/Incio/Metroid.jpg"/>
+			</li>
+			<li id="slide4">
+				<img src="img/Incio/Hollow_Knight.jpg"/>
+			</li>
+			<li id="slide5">
+				<img src="img/Pokemon/logazo.jpg"/>
+			</li>
+			</ul><br>
+			<br>
+			</br>
+			<br>
+			</br>
+		<br><ul class="menu">
+			<li>
+				<a href="#slide1">1</a>
+			</li>
+			<li>
+				<a href="#slide2">2</a>
+			</li>
+			<li>
+				<a href="#slide3">3</a>
+			</li>
+			<li>
+				<a href="#slide4">4</a>
+			</li>
+			<li>
+				<a href="#slide5">5</a>
+			</li>
+			</ul>		
+	</div>
+	<br>
+    <br>
+	<div> <button id="recomendacion" onclick="mostrar();"> recomendacion del momento </button> </div>
 
     <div id="img">
 
@@ -67,7 +80,7 @@
 
         <button id="recomendacion" onclick="ocultar();"> cerrar </button>
     </div>
-
+	
     <script>
         function mostrar() {
             document.getElementById('img').style.display = 'block';
@@ -77,55 +90,7 @@
             document.getElementById('img').style.display = 'none';
         }
     </script>
-
-    <div class="Bloodborne">
-        <figure>
-            <a href="Bloodborne.html" target="_blank">
-                <img src="img/Incio/Bloodborne.jpg" alt="Bloodborne">
-            </a>
-        </figure>
-    </div>
-
-    <div class="Hades">
-        <figure>
-            <a href="Hades.html" target="_blank">
-                <img src="img/Incio/Hades.jpg" alt="Hades">
-            </a>
-        </figure>
-    </div>
-
-    <div class="Metroid">
-        <figure>
-            <a href="Metroid.html" target="_blank">
-                <img src="img/Incio/Metroid.jpg" alt="Metroid">
-            </a>
-        </figure>
-    </div>
-
-    <div class="Hollow_Knight">
-        <figure>
-            <a href="HollowKnight.html" target="_blank">
-                <img src="img/Incio/Hollow_Knight.jpg" alt="Hollow Knight">
-            </a>
-        </figure>
-    </div>
-
-    <br>
-
-    <div class="Pokemon Arceus">
-        <figure>
-            <a href="Pokemon.html" target="_blank">
-                <img src="img/Pokemon/logazo.jpg" alt="Pokemon">
-            </a>
-        </figure>
-    </div>
-
-    <ul class="autores">
-        <li><a class="No" href="https://www.youtube.com/watch?v=kAMmg73WVIA">Esteban Quiceno</a></li> 
-        <li><a class="No" href="https://www.youtube.com/watch?v=kAMmg73WVIA">Juan Pablo Gonzalez</a></li>
-        <li><a class="No" href="https://www.youtube.com/watch?v=lAx8cXQNMU0">Nestor Gutierrez</a></li>
-    </ul>
-
+	
     <P> si quieres recomendaciones personalizadas con tu edad seleciona la opcion que mas encaje con tu edad </P>
     <button class="cuarentass" onclick="seve();"> 40 años </button>
 
@@ -264,5 +229,14 @@
         }
     </script>
 </body>
+<footer>
+	<div>
+		<ul class="autores">
+			<li><a class="No" href="https://www.youtube.com/watch?v=kAMmg73WVIA">Esteban Quiceno</a></li> 
+			<li><a class="No" href="https://www.youtube.com/watch?v=kAMmg73WVIA">Juan Pablo Gonzalez</a></li>
+			<li><a class="No" href="https://www.youtube.com/watch?v=lAx8cXQNMU0">Nestor Gutierrez</a></li>
+		</ul>
+	</div>
+</footer>
 
 </html>

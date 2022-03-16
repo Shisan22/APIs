@@ -1,80 +1,90 @@
 #contenedor1{
-    margin: auto;
-    width: 800px;
-    padding: 30px;
+		margin: auto;
+		width: 800px;
+		padding: 30px;
   }
   
   #contenedor1 > ul, li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
+		padding: 0;
+		margin: 0;
+		list-style: none;
   }
   
-  #contenedor1 > ul.slider{
-    position: relative;
-    width: 800px;
-    height: 300px;
+	#contenedor1 > ul.slider{
+		position: relative;
+		width: 800px;
+		height: 300px;
   }
-  
+	#contenedor1 > ul.slider h1{
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.6);
+		padding: 10px;
+		left: 50%;
+		top: 100px;
+		transform: translate(-50%, -50%);
+	}
   #contenedor1 > ul.slider li {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      opacity: 0;
-      width: inherit;
-      height: inherit;
-      transition: opacity .5s;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		opacity: 0;
+		width: inherit;
+		height: inherit;
+		transition: opacity .5s;
   }
   
   #contenedor1 > ul.slider li img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
   }
   
   #contenedor1 > ul.slider li:first-child {
-      opacity: 1; /*Mostramos el primer <li>*/
+		opacity: 1; /*Mostramos el primer <li>*/
   }
   
   #contenedor1 > ul.slider li:target {
-      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+		opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
   }
   
   #contenedor1 > .menu{
-    text-align: center;
-    margin: 20px;
+		text-align: center;
+		margin: 20px;
   }
   
   #contenedor1 > .menu li{
-    display: inline-block;
-    text-align: center;
+		display: inline-block;
+		text-align: center;
   }
   
   #contenedor1 > .menu li a{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
+		display: inline-block;
+		color: white;
+		text-decoration: none;
+		padding: 10px;
+		width: 20px;
+		height: 20px;
+		font-size: 20px;
+		border-radius: 100%;
   }
 body{
-    background:url(../img/fondo2.jpg);
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    color:#fff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+	background:url(../img/fondo2.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	color:#fff;
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+    margin: 10%;
 }
 h1{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 60px;  
+	text-align: center;
+	font-family:'Roboto Mono', monospace;
+	font-size: 60px;  
 }
 p{
     text-shadow: 1px 1px 1px #000;
+	font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
 }
 a{
     text-decoration:none;
@@ -103,8 +113,11 @@ a{
 ul, li{
     margin: 0;
     list-style: none;
-}
 
+}
+ul, li, p, button {
+	font-family: 'Roboto Mono', monospace;
+}
 .menu {
     text-decoration:none;
     width: 100%;
@@ -278,3 +291,24 @@ ul, li{
 #recomendacionesjp{
     display: none;
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+  }
+.imgsec {
+    position: relative ;
+    transition: transform .2s;
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: 999;
+  }
+.imgcec:hover {
+    transform: scale(1.7);
+  }
